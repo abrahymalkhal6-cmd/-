@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>مشغل صوتيات الزرانيق</title>
+    <style>
+        body { font-family: sans-serif; background: #121212; color: white; padding: 20px; text-align: center; }
+        .list-item { background: #333; padding: 15px; margin: 10px; border-radius: 10px; cursor: pointer; border: 1px solid #444; }
+        .list-item:hover { background: #444; }
+        audio { width: 100%; margin-top: 20px; }
+    </style>
+</head>
+<body>
+    <h2>قائمة الصوتيات</h2>
+    <audio id="player" controls></audio>
+    
+    <div class="list-item" onclick="document.getElementById('player').src='شاهد_اقوى__زامل_لابطال_الزرانيق.mp3(256k).mp3'; document.getElementById('player').play();">
+        شاهد أقوى زامل لابطال الزرانيق
+    </div>
+    
+    <div class="list-item" onclick="document.getElementById('player').src='شيلة_جيش_الزرانيق_2023.mp3(256k).mp3'; document.getElementById('player').play();">
+        شيلة جيش الزرانيق 2023
+    </div>
+
+    <div class="list-item" onclick="document.getElementById('player').src='شيلة_مهداء_لقبيلة_الزرانيق_التهامية.mp3(256k).mp3'; document.getElementById('player').play();">
+        شيلة مهداء لقبيلة الزرانيق التهامية
+    </div>
+</body>
+</html>
